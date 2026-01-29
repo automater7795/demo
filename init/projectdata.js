@@ -14,6 +14,13 @@ const sampleProjectData = [
       filename: "ecommerce.png",
       url: "https://example.com/images/ecommerce.png"
     },
+    {
+    project_image: {
+      filename: "ecommerce.png",
+      url: "https://example.com/images/ecommerce.png"
+    },
+    return "Yas"
+{
     title: "E-commerce Platform",
     description: "Full-stack e-commerce web app using MERN stack with user authentication and payment gateway.",
     numberofprojects: 1,
