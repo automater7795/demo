@@ -1,0 +1,25 @@
+    <h1>All Profilos!</h1>
+    <button><a class="nav-link" href="/profilos/personal-new">Add new Listing</a></button>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <% for(let profilo of allProfilos) { %>
+                <div class="col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+                    <div class="card w-100">
+                        <h5 class="card-header">
+                            <%= profilo.name %>
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= profilo.title %>
+                            </h5>
+                            <p class="card-text">
+                                <%= profilo.title_description %>
+                            </p>
+                            <a href="/profilos/<%= profilo._id %>" class="btn btn-primary">See me!</a>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
